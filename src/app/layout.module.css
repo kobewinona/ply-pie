@@ -1,0 +1,11 @@
+.page {
+  background-color: #eee7d7;
+  
+  margin: 0;
+  padding: 0;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
