@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+}
+
+.line {
+  width: 1px;
+  height: 100%;
+  
+  background-color: #4d4236;
+  
+  position: absolute;
+  
+  left: 19px;
+  
+  z-index: 1;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 16 / 15;
+  
+  object-fit: contain;
+  
+  position: relative;
+}

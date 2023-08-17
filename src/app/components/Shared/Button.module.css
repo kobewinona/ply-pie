@@ -1,0 +1,23 @@
+.button {
+  color: #4d4236;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  
+  background-color: transparent;
+  
+  display: block;
+  
+  border: 2px solid #4d4236;
+  border-radius: 20px;
+  padding: 18px 43.5px;
+}
+
+.button_place_item {
+  margin: 0 auto;
+}
+
+.button_place_about {
+  margin: 0 auto 0 auto;
+}

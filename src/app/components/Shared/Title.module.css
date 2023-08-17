@@ -1,0 +1,19 @@
+.title {
+  color: #4d4236;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.title_place_item {
+  margin: 0 20px 20px;
+}
+
+.title_place_about {
+  margin: 30px 20px 20px 40px;
+}
+
+.title_place_order {
+  text-align: center;
+}
