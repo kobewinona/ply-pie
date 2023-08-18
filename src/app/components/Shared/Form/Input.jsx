@@ -2,8 +2,10 @@
 
 import {forwardRef, useState, useEffect} from 'react';
 
+import inputStyles from './Input.module.css';
 
-const Input = forwardRef(({onUpdate, validate, place, ...props}, ref) => {
+
+const Input = forwardRef(({onUpdate, validate, place, fieldSize, ...props}, ref) => {
   const [inputValue, setInputValue] = useState('');
   const [isInputValid, setIsInputValid] = useState(true);
   const [errorMessage, setErrorMessage] = useState('');
@@ -26,12 +28,12 @@ const Input = forwardRef(({onUpdate, validate, place, ...props}, ref) => {
     <>
       <input
         ref={ref}
-        className={`form__input form__input_place_${place} ${validate ? !isInputValid && 'form__input_invalid' : ''}`}
-        onChange={event => validate && handleInputsChange(event)}
+        className={`${inputStyles.input} ${!isInputValid && inputStyles['input_invalid']} ${inputStyles[`input_size_${fieldSize}`]}`}
+        onChange={handleInputsChange}
         value={inputValue || ''}
         {...props}
       />
-      {validate && (<span className="form__error-message">{!isInputValid && errorMessage}</span>)}
+      <span className={inputStyles['input_error-message']}>{!isInputValid && errorMessage}</span>
     </>
   );
 });

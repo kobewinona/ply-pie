@@ -4,6 +4,8 @@ import ItemList from './components/ItemList/ItemList';
 import Slogan from './components/Slogan/Slogan';
 import About from './components/About/About';
 import Order from './components/Order/Order';
+import Contacts from './components/Contacts/Contacts';
+import Footer from './components/Footer/Footer';
 
 
 const Page = () => {
@@ -15,6 +17,8 @@ const Page = () => {
       <Slogan />
       <About />
       <Order />
+      <Contacts />
+      <Footer />
     </>
   );
 };

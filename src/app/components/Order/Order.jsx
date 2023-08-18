@@ -28,22 +28,36 @@ const Order = () => {
       <Title text="Заказ" place="order"/>
       <Form
         onSubmit={handleSubmit}
-        validate={false}
-        place="popup"
+        validate={true}
         theme="light"
         size="small"
       >
         <Input
-          defaultValue={'currentUser.name'}
+          defaultValue={''}
           onUpdate={handleValuesUpdate}
-          validate={true}
-          place="popup"
           name="userName"
           type="text"
           placeholder="Имя"
           aria-label="Имя."
           minLength="2"
           maxLength="40"
+          autocomplete="off"
+          required
+        />
+        <Input
+          defaultValue={''}
+          onUpdate={handleValuesUpdate}
+          name="userName"
+          type="email"
+          placeholder="E-mail"
+          aria-label="E-mail."
+          autocomplete="off"
+          required
+        />
+        <textarea
+          className={orderStyles['text-area']}
+          placeholder="Расскажите о заказе..."
+          aria-label="Расскажите о заказе."
           required
         />
       </Form>

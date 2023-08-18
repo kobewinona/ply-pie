@@ -21,3 +21,14 @@
 .button_place_about {
   margin: 0 auto 0 auto;
 }
+
+.button_place_order {
+  width: calc(100% - (20px * 2));
+  
+  color: #eee7d7;
+  
+  background-color: #4d4236;
+  
+  margin: 0 auto;
+  border: 2px solid #4d4236;
+}

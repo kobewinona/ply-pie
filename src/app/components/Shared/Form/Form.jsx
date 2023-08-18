@@ -3,9 +3,10 @@
 import {useRef, useState, useEffect} from 'react';
 
 import Spinner from '../Spinner';
+import Button from '../Button';
 
 
-const Form = ({validate, onSubmit, isOpen, place, ...props}) => {
+const Form = ({onSubmit, isOpen, ...props}) => {
   const [isFormValid, setIsFormValid] = useState(false);
   const [inputsValidity, setInputsValidity] = useState({});
   
@@ -55,28 +56,29 @@ const Form = ({validate, onSubmit, isOpen, place, ...props}) => {
   
   const submitButtonRef = useRef();
   
-  if (!validate && isOpen) {
+  if (isOpen) {
     setTimeout(() => submitButtonRef.current?.focus(), 50);
   }
   
   return (
     <form
-      onChange={event => validate && handleChange(event)}
+      onChange={handleChange}
       onSubmit={handleSubmit}
-      className={`form form_place_${place}`}
       name={props.name}
       noValidate
     >
       {props.children}
       {props.isUpdating
         ? <Spinner theme={props.theme} size={props.size}/>
-        : <button
+        : <Button
           ref={submitButtonRef}
-          className={`form__submit form__submit_place_${place} ${validate ? !isFormValid && 'form__submit_disabled' : ''}`}
+          isFormValid={isFormValid && true}
+          text="Отправить"
+          place="order"
           type="submit"
           name="submit"
-          disabled={validate ? !isFormValid : false}
-        >{props.submitText || 'Сохранить'}</button>}
+          disabled={!isFormValid}
+        >Отправить</Button>}
     </form>
   )
 };

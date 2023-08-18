@@ -1,0 +1,31 @@
+.input {
+  width: calc(100% - (41px * 2));
+  
+  background-color: transparent;
+  
+  display: block;
+  
+  margin: 0 auto 20px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: 1px solid #4d4236;
+}
+
+.input_invalid {
+  margin-bottom: 5px;
+  border: 1px solid #ca7458;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input_error-message {
+  width: calc(100% - (20px * 2));
+  
+  color: #ca7458;
+  
+  display: block;
+  
+  margin: 0 auto 20px;
+}

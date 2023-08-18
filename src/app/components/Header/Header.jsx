@@ -14,7 +14,7 @@ const Header = () => {
       <img
         className={headerStyles.logo}
         src="/logo_brown_big.svg"
-        alt=""
+        alt="Логотип."
       />
       <NavBar />
     </header>

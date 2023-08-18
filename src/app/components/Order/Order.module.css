@@ -1,3 +1,23 @@
 .container {
 
 }
+
+.text-area {
+  width: calc(100% - (41px * 2));
+  aspect-ratio: 56 / 25;
+  
+  background-color: transparent;
+  
+  display: block;
+  
+  margin: 0 auto 20px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: 1px solid #4d4236;
+  
+  resize: vertical;
+}
+
+.text-area:focus {
+  outline: none;
+}
