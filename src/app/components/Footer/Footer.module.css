@@ -1,6 +1,8 @@
-.container {
+.footer {
   background-color: #4d4236;
   
+  margin-top: 70px;
+  padding-top: 30px;
   padding-bottom: 70px;
 }
 
@@ -10,18 +12,20 @@
   
   display: block;
   
-  margin: 30px auto;
+  margin: 0 auto;
+  /*padding: 30px 0;*/
 }
 
 .socials-container {
   width: calc(100% - (90px * 2));
+  max-width: 200px;
   
   list-style: none;
   
   display: flex;
   justify-content: space-between;
   
-  margin: 0 auto 30px;
+  margin: 30px auto;
   padding: 0;
 }
 
@@ -51,4 +55,16 @@
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin-top: 80px;
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+  
+  .socials-container {
+    margin: 70px auto;
+  }
 }

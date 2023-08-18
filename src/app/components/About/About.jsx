@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import aboutStyles from './About.module.css';
+import styles from './About.module.css';
 import Title from '../Shared/Title';
 import Text from '../Shared/Text';
 import Button from '../Shared/Button';
@@ -8,9 +8,9 @@ import Button from '../Shared/Button';
 
 const About = () => {
   return (
-    <section className={aboutStyles.container}>
-      <div className={aboutStyles.line}></div>
-      <div className={aboutStyles.image}>
+    <section className={styles.about}>
+      <div className={styles.line}></div>
+      <div className={styles.image}>
         <Image
           src='/about/about.jpeg'
           alt=""

@@ -5,4 +5,6 @@
   object-fit: contain;
   
   position: relative;
+  
+  padding-top: 70px;
 }

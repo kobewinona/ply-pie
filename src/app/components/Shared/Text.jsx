@@ -1,10 +1,10 @@
-import textStyles from './Text.module.css';
+import styles from './Text.module.css';
 
 
 const Text = ({text, place}) => {
   return (
     <p
-      className={`${textStyles.text} ${textStyles[`text_place_${place}`]}`}>{text}
+      className={`${styles.text} ${styles[`text_place_${place}`]}`}>{text}
     </p>
   );
 };

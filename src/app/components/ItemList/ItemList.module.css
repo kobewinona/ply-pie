@@ -1,4 +1,8 @@
-.container {
+.itemList {
+  margin-top: 70px;
+}
+
+.itemListContainer {
   list-style: none;
   
   display: grid;
@@ -6,4 +10,14 @@
   
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  .itemList {
+    margin-top: 185px;
+  }
+  
+  .itemListContainer {
+    row-gap: 185px;
+  }
 }

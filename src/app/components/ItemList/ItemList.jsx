@@ -2,14 +2,14 @@ import React from 'react';
 
 import {items} from '../../utils/items';
 
-import itemListStyles from './ItemList.module.css';
+import styles from './ItemList.module.css';
 
 import Item from './Item';
 
 const ItemList = () => {
   return (
-    <section>
-      <ul className={itemListStyles.container}>
+    <section className={styles.itemList}>
+      <ul className={styles.itemListContainer}>
         {
           items.map(item => {
             return (

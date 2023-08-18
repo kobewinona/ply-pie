@@ -1,5 +1,7 @@
-.container {
+.contacts {
   background-color: #4d4236;
+  
+  margin-top: 70px;
 }
 
 .contact-container {
@@ -63,4 +65,10 @@
   border-radius: 50%;
   
   transform: translate(-50%, 50%);
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    margin-top: 185px;
+  }
 }

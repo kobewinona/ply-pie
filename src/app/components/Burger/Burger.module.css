@@ -78,18 +78,18 @@
   transition-delay: .1s;
 }
 
-.icon_turned-into-cross {
+.iconTurnedIntoCross {
   animation: turnIntoCross .2s forwards cubic-bezier(.55,.06,.68,.19) .2s;
 }
 
-.icon_turned-into-cross:before {
+.iconTurnedIntoCross:before {
   transform: translate(0, 0);
   
   transition: transform .2s cubic-bezier(.55,.06,.68,.19);
   transition-delay: 0s;
 }
 
-.icon_turned-into-cross:after {
+.iconTurnedIntoCross:after {
   transform: translate(0, 0) rotate(90deg);
   
   transition: transform .2s cubic-bezier(.55,.06,.68,.19);

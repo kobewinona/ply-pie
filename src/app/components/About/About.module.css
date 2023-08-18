@@ -1,5 +1,7 @@
-.container {
+.about {
   position: relative;
+  
+  margin-top: 70px;
 }
 
 .line {
@@ -22,4 +24,10 @@
   object-fit: contain;
   
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .about {
+    margin-top: 185px;
+  }
 }

@@ -1,10 +1,10 @@
-import sloganStyles from './Slogan.module.css';
+import styles from './Slogan.module.css';
 
 const Slogan = () => {
   return (
-    <section className={sloganStyles.container}>
-      <p className={sloganStyles.text}>COOKED WITH<br/>
-        <span className={sloganStyles.accent}>FUTURISM</span>
+    <section className={styles.slogan}>
+      <p className={styles.text}>COOKED WITH<br/>
+        <span className={styles.accent}>FUTURISM</span>
       </p>
     </section>
   );

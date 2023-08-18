@@ -3,9 +3,6 @@
   
   background-color: #eee7d7;
   
-  display: grid;
-  row-gap: 70px;
-  
   margin: 0 auto;
   padding: 0;
   
@@ -13,4 +10,9 @@
   -moz-osx-font-smoothing: grayscale;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+}
+
+.page + .header {
+  background-color: black;
+  row-gap: 0;
 }

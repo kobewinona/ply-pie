@@ -24,7 +24,7 @@ const Order = () => {
     event.preventDefault();
   }
   return (
-    <section className={orderStyles.container}>
+    <section className={orderStyles.order}>
       <Title text="Заказ" place="order"/>
       <Form
         onSubmit={handleSubmit}
@@ -41,7 +41,7 @@ const Order = () => {
           aria-label="Имя."
           minLength="2"
           maxLength="40"
-          autocomplete="off"
+          autoComplete="off"
           required
         />
         <Input
@@ -51,7 +51,7 @@ const Order = () => {
           type="email"
           placeholder="E-mail"
           aria-label="E-mail."
-          autocomplete="off"
+          autoComplete="off"
           required
         />
         <textarea

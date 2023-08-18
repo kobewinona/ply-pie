@@ -1,5 +1,6 @@
-.navigation {
+.navBarContainer {
   width: calc(100% - (20px * 2));
+  max-width: 400px;
   
   list-style: none;
   
@@ -12,8 +13,36 @@
   padding: 0;
 }
 
-.logo {
+.logoContainer {
+  margin: 0;
+}
 
+.menu {
+  max-width: 458px;
+  
+  list-style: none;
+  
+  display: flex;
+  justify-content: space-between;
+  column-gap: clamp(60px, 7vw, 80px);
+  
+  margin: 0;
+  padding: 0;
+}
+
+.socialsContainer {
+  list-style: none;
+  
+  display: flex;
+  column-gap: 30px;
+  
+  margin: 0;
+  padding: 0;
+}
+
+.socialsLogo {
+  width: 22px;
+  height: 22px;
 }
 
 .logo {
@@ -21,7 +50,7 @@
   height: 22px;
 }
 
-.button {
+.catalogueButton {
   color: #eee7d7;
   font-size: 16px;
   font-weight: 700;
@@ -31,4 +60,21 @@
   border: none;
   border-radius: 20px;
   padding: 7px 48px;
+}
+
+@media (min-width: 480px) {
+  .navBarContainer {
+    width: calc(100% - (40px * 2));
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navBarContainer {
+    max-width: 1200px;
+  }
+  
+  .logoContainer {
+    margin-right: 10%;
+  }
 }

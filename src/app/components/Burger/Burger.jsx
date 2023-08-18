@@ -13,7 +13,7 @@ const Burger = () => {
   
   return (
     <div className={burgerStyles.container} onClick={toggleMenu}>
-      <div className={`${burgerStyles.icon} ${isMenuOpen && burgerStyles['icon_turned-into-cross']}`}></div>
+      <div className={`${burgerStyles.icon} ${isMenuOpen && burgerStyles.iconTurnedIntoCross}`}></div>
     </div>
   );
 };

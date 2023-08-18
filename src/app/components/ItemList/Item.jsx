@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import itemStyles from './Item.module.css';
+import styles from './Item.module.css';
 import Title from '../Shared/Title';
 import Text from '../Shared/Text';
 import Button from '../Shared/Button';
@@ -11,7 +11,7 @@ const Item = ({id, name, description}) => {
   return (
     <>
       <Title text={name} place="item" />
-      <div className={itemStyles.image}>
+      <div className={styles.image}>
         <Image
           src={`/items/${id}.jpeg`}
           alt=""

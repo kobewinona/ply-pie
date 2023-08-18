@@ -1,17 +1,31 @@
 .text {
+  width: calc(100% - (20px * 2));
+  max-width: 400px;
+  
   color: #4d4236;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   
+  display: block;
+  
   padding: 0;
 }
 
 .text_place_item {
-  margin: 30px 20px;
+  margin: 30px auto;
 }
 
 .text_place_about {
-  margin: 20px 20px 30px 40px;
+  width: calc(100% - (20px + 40px));
+  
+  margin: 20px auto 30px 40px;
+}
+
+@media (min-width: 480px) {
+  .text {
+    width: calc(100% - (40px * 2));
+    max-width: 768px;
+  }
 }

@@ -5,7 +5,7 @@ import leadStyles from './Lead.module.css';
 
 const Lead = () => {
   return (
-    <section className={leadStyles.container}>
+    <section className={leadStyles.lead}>
       <Image
         src="/cover/secretaire.jpg"
         alt=""

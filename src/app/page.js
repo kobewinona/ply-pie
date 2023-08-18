@@ -12,12 +12,14 @@ const Page = () => {
   return (
     <>
       <Header />
-      <Lead />
-      <ItemList />
-      <Slogan />
-      <About />
-      <Order />
-      <Contacts />
+      <main>
+        <Lead />
+        <ItemList />
+        <Slogan />
+        <About />
+        <Order />
+        <Contacts />
+      </main>
       <Footer />
     </>
   );

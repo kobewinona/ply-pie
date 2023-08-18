@@ -1,5 +1,5 @@
-.container {
-
+.slogan {
+  margin-top: 70px;
 }
 
 .text {
@@ -20,4 +20,10 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 14.4px;
+}
+
+@media (min-width: 768px) {
+  .slogan {
+    margin-top: 185px;
+  }
 }
