@@ -7,15 +7,19 @@ import Order from './components/Order/Order';
 import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
+import Responsive from './components/Shared/Responsive';
 
 
 const Page = () => {
+  const breakpoint = 768;
+  
   return (
     <>
       <Header />
-      <NavBar />
+      <Responsive element={NavBar} breakpoint={breakpoint} />
       <main>
-        <Lead />
+        <Responsive element={Lead} breakpoint={breakpoint} />
+        {/*<Lead />*/}
         <ItemList />
         <Slogan />
         <About />

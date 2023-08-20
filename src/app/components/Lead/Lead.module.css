@@ -1,8 +1,32 @@
 .layout {
-  width: 100%;
-  height: calc(100vh - 190px);
-  
   position: relative;
   
   margin-top: 28px;
+}
+
+.image-container {
+  width: 100%;
+  height: calc(100vh - 190px);
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60% 40%;
+}
+
+.image {
+  width: 100%;
+  height: calc(100vh - 190px);
+  object-fit: cover;
+  
+  position: relative;
+}
+
+.image:first-child {
+  grid-row: span 2;
+}
+
+@media (min-width: 768px) {
+  .image {
+    height: 100%;
+  }
 }

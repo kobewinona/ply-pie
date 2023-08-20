@@ -1,4 +1,7 @@
 .button {
+  max-height: 60px;
+  box-sizing: border-box;
+  
   color: #4d4236;
   font-size: 20px;
   font-style: normal;
@@ -11,7 +14,7 @@
   
   border: 2px solid #4d4236;
   border-radius: 20px;
-  padding: 18px 43.5px;
+  padding: 16px 42px;
 }
 
 .button_place_item {

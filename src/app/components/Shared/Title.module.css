@@ -37,3 +37,10 @@
     max-width: 768px;
   }
 }
+
+@media (min-width: 768px) {
+  .title_place_item {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+}

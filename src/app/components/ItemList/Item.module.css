@@ -1,10 +1,26 @@
+.item-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, fit-content(100%));
+}
+
 .image {
   width: 100%;
-  aspect-ratio: 32 / 25;
+  aspect-ratio: 56 / 31;
   
   object-fit: contain;
   
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .item-container {
+    grid-template-columns: 60% 1fr;
+  }
   
-  padding-top: 70px;
+  .image {
+    height: 100%;
+    
+    grid-row: span 3;
+  }
 }

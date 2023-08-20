@@ -7,27 +7,7 @@ import styles from './NavBar.module.css';
 import Burger from '../Burger/Burger';
 
 
-const NavBar = () => {
-  const higherRes = 768;
-  const [isMobile, setIsMobile] = useState(false);
-  
-  const handleResize = () => {
-    if (window.innerWidth < higherRes) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  }
-  
-  useEffect(() => {
-    setIsMobile(window.innerWidth <= higherRes);
-    
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-  
+const NavBar = ({isMobile}) => {
   return (
     <nav className={styles['nav-bar']}>
       <ul className={styles['menu-container']}>

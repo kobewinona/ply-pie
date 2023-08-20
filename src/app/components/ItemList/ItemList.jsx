@@ -5,6 +5,7 @@ import {items} from '../../utils/items';
 import styles from './ItemList.module.css';
 
 import Item from './Item';
+import Responsive from '@/app/components/Shared/Responsive';
 
 const ItemList = () => {
   return (
@@ -14,13 +15,22 @@ const ItemList = () => {
           items.map(item => {
             return (
               <li>
-                <Item
+                <Responsive
+                  element={Item}
+                  breakpoint={768}
                   key={item._id}
                   id={item._id}
                   name={item.name}
                   image={item.image}
                   description={item.description}
                 />
+                {/*<Item*/}
+                {/*  key={item._id}*/}
+                {/*  id={item._id}*/}
+                {/*  name={item.name}*/}
+                {/*  image={item.image}*/}
+                {/*  description={item.description}*/}
+                {/*/>*/}
               </li>
             )
           })

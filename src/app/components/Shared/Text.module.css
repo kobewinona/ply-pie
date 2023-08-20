@@ -29,3 +29,9 @@
     max-width: 768px;
   }
 }
+
+@media (min-width: 768px) {
+  .text_place_item {
+    margin-bottom: 45px;
+  }
+}
