@@ -28,37 +28,37 @@ const NavBar = () => {
     };
   }, []);
   
-  console.log('isMobile', isMobile);
-  
   return (
-    <nav>
-      <ul className={styles.navBarContainer}>
-        <li className={styles.logoContainer}>
-          <img
-            className={`${styles.logo} ${styles.logo}`}
-            src="/logo_brown.svg"
-            alt=""
-          />
+    <nav className={styles['nav-bar']}>
+      <ul className={styles['menu-container']}>
+        <li className={styles['logo-container']}>
+          <a href="#">
+            <img
+              className={styles['logo']}
+              src="/logo_brown.svg"
+              alt=""
+            />
+          </a>
         </li>
         {isMobile
           ? <>
-              <li><button className={styles.catalogueButton}>Каталог</button></li>
+              <li><button className={styles['catalogue-button']}>Каталог</button></li>
               <li><Burger /></li>
             </>
           : <>
               <li>
-                <ul className={styles.menu}>
+                <ul className={styles['menu']}>
                   <li>Каталог</li>
                   <li>О нас</li>
                   <li>Контакты</li>
                 </ul>
               </li>
               <li>
-                <ul className={styles.socialsContainer}>
+                <ul className={styles['socials-container']}>
                   <li>
                     <a>
                       <img
-                        className={styles.socialsLogo}
+                        className={styles['socials-logo']}
                         src="/pictograms/telegram_dark.png"
                         alt="Телеграм"/>
                     </a>
@@ -66,7 +66,7 @@ const NavBar = () => {
                   <li>
                     <a>
                       <img
-                        className={styles.socialsLogo}
+                        className={styles['socials-logo']}
                         src="/pictograms/instagram_dark.png"
                         alt="Инстаграм"/>
                     </a>
@@ -74,7 +74,7 @@ const NavBar = () => {
                   <li>
                     <a>
                       <img
-                        className={styles.socialsLogo}
+                        className={styles['socials-logo']}
                         src="/pictograms/pinterest_dark.png"
                         alt="Пинтерест"/>
                     </a>

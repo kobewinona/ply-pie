@@ -11,7 +11,7 @@ const Item = ({id, name, description}) => {
   return (
     <>
       <Title text={name} place="item" />
-      <div className={styles.image}>
+      <div className={styles['image']}>
         <Image
           src={`/items/${id}.jpeg`}
           alt=""

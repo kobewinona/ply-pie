@@ -8,8 +8,8 @@ import Item from './Item';
 
 const ItemList = () => {
   return (
-    <section className={styles.itemList}>
-      <ul className={styles.itemListContainer}>
+    <section className={styles['layout']}>
+      <ul className={styles['item-list-container']}>
         {
           items.map(item => {
             return (

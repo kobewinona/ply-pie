@@ -1,8 +1,8 @@
-.lead {
+.layout {
   width: 100%;
   height: calc(100vh - 190px);
   
   position: relative;
   
-  margin-top: 40px;
+  margin-top: 28px;
 }

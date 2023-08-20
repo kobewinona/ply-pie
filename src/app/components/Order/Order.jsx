@@ -2,7 +2,7 @@
 
 import {useState} from 'react';
 
-import orderStyles from './Order.module.css';
+import styles from './Order.module.css';
 
 import Title from '../Shared/Title';
 import Form from '../Shared/Form/Form';
@@ -24,7 +24,7 @@ const Order = () => {
     event.preventDefault();
   }
   return (
-    <section className={orderStyles.order}>
+    <section className={styles['layout']}>
       <Title text="Заказ" place="order"/>
       <Form
         onSubmit={handleSubmit}
@@ -55,7 +55,7 @@ const Order = () => {
           required
         />
         <textarea
-          className={orderStyles['text-area']}
+          className={styles['text-area']}
           placeholder="Расскажите о заказе..."
           aria-label="Расскажите о заказе."
           required

@@ -1,4 +1,4 @@
-.order {
+.layout {
   margin-top: 70px;
 }
 
@@ -23,7 +23,7 @@
 }
 
 @media (min-width: 768px) {
-  .order {
+  .layout {
     margin-top: 185px;
   }
 }

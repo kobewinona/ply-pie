@@ -2,7 +2,7 @@ import './globals.css'
 import Head from 'next/head';
 
 import montserratAlternates from './utils/fonts/montserratAlternates';
-import layoutStyles from './layout.module.css'
+import styles from './layout.module.css'
 
 export let metadata = {
   title: 'Ply Pie',
@@ -12,8 +12,8 @@ export let metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ru" className={montserratAlternates.className}>
-      <body className={layoutStyles.page}>
+    <html lang="ru" className={`${styles['root']} ${montserratAlternates.className}`}>
+      <body className={styles['page']}>
         <Head>
           <link rel="icon" href="/favicon.ico" sizes="any" />
         </Head>

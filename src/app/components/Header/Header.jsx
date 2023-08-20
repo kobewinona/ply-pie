@@ -1,22 +1,20 @@
 import daysOne from '../../utils/fonts/daysOne';
 
-import headerStyles from './Header.module.css';
-import NavBar from './NavBar';
+import styles from './Header.module.css';
 
 
 const Header = () => {
   return (
-    <header>
-      <h1 className={`${headerStyles.title} ${daysOne.className}`}>
-        <span className={headerStyles.word}>PLY</span>
-        <span className={headerStyles.word}>PIE</span>
+    <header className={styles['layout']}>
+      <h1 className={`${styles['title']} ${daysOne.className}`}>
+        <span className={styles['title-word']}>PLY</span>
+        <span className={styles['title-word']}>PIE</span>
       </h1>
       <img
-        className={headerStyles.logo}
+        className={styles['logo']}
         src="/logo_brown_big.svg"
         alt="Логотип."
       />
-      <NavBar />
     </header>
   );
 };

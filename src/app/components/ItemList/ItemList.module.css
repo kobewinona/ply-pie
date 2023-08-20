@@ -1,8 +1,8 @@
-.itemList {
+.layout {
   margin-top: 70px;
 }
 
-.itemListContainer {
+.item-list-container {
   list-style: none;
   
   display: grid;
@@ -13,11 +13,11 @@
 }
 
 @media (min-width: 768px) {
-  .itemList {
+  .layout {
     margin-top: 185px;
   }
   
-  .itemListContainer {
+  .item-list-container {
     row-gap: 185px;
   }
 }

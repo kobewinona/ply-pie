@@ -1,11 +1,11 @@
 import Image from 'next/image';
 
-import leadStyles from './Lead.module.css';
+import styles from './Lead.module.css';
 
 
 const Lead = () => {
   return (
-    <section className={leadStyles.lead}>
+    <section className={styles['layout']}>
       <Image
         src="/cover/secretaire.jpg"
         alt=""

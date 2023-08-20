@@ -1,4 +1,16 @@
-.navBarContainer {
+.nav-bar {
+  background-color: #eee7d7;
+  
+  position: sticky;
+  
+  top: 0;
+  left: 0;
+  padding: 12px 0;
+  
+  z-index: 2;
+}
+
+.menu-container {
   width: calc(100% - (20px * 2));
   max-width: 400px;
   
@@ -13,8 +25,25 @@
   padding: 0;
 }
 
-.logoContainer {
+.logo-container {
   margin: 0;
+}
+
+.logo {
+  width: 22px;
+  height: 22px;
+}
+
+.catalogue-button {
+  color: #eee7d7;
+  font-size: 16px;
+  font-weight: 700;
+  
+  background-color: #4d4236;
+  
+  border: none;
+  border-radius: 20px;
+  padding: 7px 48px;
 }
 
 .menu {
@@ -30,7 +59,7 @@
   padding: 0;
 }
 
-.socialsContainer {
+.socials-container {
   list-style: none;
   
   display: flex;
@@ -40,41 +69,24 @@
   padding: 0;
 }
 
-.socialsLogo {
+.socials-logo {
   width: 22px;
   height: 22px;
-}
-
-.logo {
-  width: 22px;
-  height: 22px;
-}
-
-.catalogueButton {
-  color: #eee7d7;
-  font-size: 16px;
-  font-weight: 700;
-  
-  background-color: #4d4236;
-  
-  border: none;
-  border-radius: 20px;
-  padding: 7px 48px;
 }
 
 @media (min-width: 480px) {
-  .navBarContainer {
+  .menu-container {
     width: calc(100% - (40px * 2));
     max-width: 768px;
   }
 }
 
 @media (min-width: 768px) {
-  .navBarContainer {
+  .menu-container {
     max-width: 1200px;
   }
   
-  .logoContainer {
+  .logo-container {
     margin-right: 10%;
   }
 }

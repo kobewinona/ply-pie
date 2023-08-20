@@ -6,12 +6,14 @@ import About from './components/About/About';
 import Order from './components/Order/Order';
 import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer/Footer';
+import NavBar from './components/NavBar/NavBar';
 
 
 const Page = () => {
   return (
     <>
       <Header />
+      <NavBar />
       <main>
         <Lead />
         <ItemList />
