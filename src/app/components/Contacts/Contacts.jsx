@@ -5,7 +5,7 @@ import Title from '../Shared/Title';
 
 const Contacts = () => {
   return (
-    <section className={contactsStyles.contacts}>
+    <section id="contacts" className={contactsStyles.contacts}>
       <Title text="Контакты" place="contacts"/>
       <div className={contactsStyles['contact-container']}>
         <div className={`${contactsStyles.pict} ${contactsStyles['pict_phone']}`}></div>

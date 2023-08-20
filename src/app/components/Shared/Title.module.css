@@ -44,3 +44,9 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: 768px) {
+  .title_place_about {
+    margin-top: 0;
+  }
+}

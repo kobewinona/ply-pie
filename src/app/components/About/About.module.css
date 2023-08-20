@@ -1,4 +1,8 @@
-.about {
+.layout {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, fit-content(100%));
+  
   position: relative;
   
   margin-top: 70px;
@@ -20,14 +24,38 @@
 .image {
   width: 100%;
   aspect-ratio: 16 / 15;
+  max-height: 360px;
   
-  object-fit: contain;
+  object-fit: cover;
   
   position: relative;
 }
 
 @media (min-width: 768px) {
-  .about {
-    margin-top: 185px;
+  .layout {
+    width: calc(80%);
+    
+    grid-template-columns: fit-content(100%) 45% 55%;
+    
+    margin: 185px auto 0;
+  }
+  
+  .line {
+    height: 100%;
+  
+    grid-row: span 3;
+    order: 1;
+  
+    position: relative;
+    
+    left: 0;
+  }
+  
+  .image {
+    height: 100%;
+    max-height: none;
+    
+    grid-row: span 3;
+    order: 3;
   }
 }

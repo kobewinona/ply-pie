@@ -12,25 +12,24 @@ const ItemList = () => {
     <section className={styles['layout']}>
       <ul className={styles['item-list-container']}>
         {
-          items.map(item => {
+          items.map((item, i) => {
+            let imagePosition;
+            
+            if (i % 2 === 0) {
+              imagePosition = 'left';
+            } else {
+              imagePosition = 'right';
+            }
             return (
               <li>
-                <Responsive
-                  element={Item}
-                  breakpoint={768}
+                <Item
                   key={item._id}
                   id={item._id}
                   name={item.name}
                   image={item.image}
+                  imagePosition={imagePosition}
                   description={item.description}
                 />
-                {/*<Item*/}
-                {/*  key={item._id}*/}
-                {/*  id={item._id}*/}
-                {/*  name={item.name}*/}
-                {/*  image={item.image}*/}
-                {/*  description={item.description}*/}
-                {/*/>*/}
               </li>
             )
           })

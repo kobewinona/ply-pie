@@ -28,15 +28,15 @@ const NavBar = ({isMobile}) => {
           : <>
               <li>
                 <ul className={styles['menu']}>
-                  <li>Каталог</li>
-                  <li>О нас</li>
-                  <li>Контакты</li>
+                  <li><a className={styles['link']} href="#">Каталог</a></li>
+                  <li><a className={styles['link']} href="#about">О нас</a></li>
+                  <li><a className={styles['link']} href="#contacts">Контакты</a></li>
                 </ul>
               </li>
               <li>
                 <ul className={styles['socials-container']}>
                   <li>
-                    <a>
+                    <a href="#">
                       <img
                         className={styles['socials-logo']}
                         src="/pictograms/telegram_dark.png"
@@ -44,7 +44,7 @@ const NavBar = ({isMobile}) => {
                     </a>
                   </li>
                   <li>
-                    <a>
+                    <a href="#">
                       <img
                         className={styles['socials-logo']}
                         src="/pictograms/instagram_dark.png"
@@ -52,7 +52,7 @@ const NavBar = ({isMobile}) => {
                     </a>
                   </li>
                   <li>
-                    <a>
+                    <a href="#">
                       <img
                         className={styles['socials-logo']}
                         src="/pictograms/pinterest_dark.png"

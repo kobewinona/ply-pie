@@ -1,7 +1,7 @@
 .item-container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(3, fit-content(100%));
+  grid-template-rows: repeat(4, fit-content(100%));
 }
 
 .image {
@@ -14,13 +14,23 @@
 }
 
 @media (min-width: 768px) {
-  .item-container {
+  .item-container_image_left {
     grid-template-columns: 60% 1fr;
+    grid-template-rows: repeat(3, fit-content(100%));
+  }
+  
+  .item-container_image_right {
+    grid-template-columns: 1fr 60%;
+    grid-template-rows: repeat(3, fit-content(100%));
   }
   
   .image {
     height: 100%;
     
     grid-row: span 3;
+  }
+  
+  .image_left {
+    order: -1;
   }
 }

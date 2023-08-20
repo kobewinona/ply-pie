@@ -18,8 +18,7 @@ const Page = () => {
       <Header />
       <Responsive element={NavBar} breakpoint={breakpoint} />
       <main>
-        <Responsive element={Lead} breakpoint={breakpoint} />
-        {/*<Lead />*/}
+        <Lead />
         <ItemList />
         <Slogan />
         <About />
