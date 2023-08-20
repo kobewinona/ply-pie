@@ -1,22 +1,24 @@
-import contactsStyles from './Contacts.module.css';
+import styles from './Contacts.module.css';
 
 import Title from '../Shared/Title';
 
 
 const Contacts = () => {
   return (
-    <section id="contacts" className={contactsStyles.contacts}>
+    <section id="contacts" className={styles['layout']}>
       <Title text="Контакты" place="contacts"/>
-      <div className={contactsStyles['contact-container']}>
-        <div className={`${contactsStyles.pict} ${contactsStyles['pict_phone']}`}></div>
-        <p className={contactsStyles.text}>+7 (111) 222-33-44</p>
+      <div className={styles['contacts-container']}>
+        <div className={styles['contact-container']}>
+          <div className={`${styles.pict} ${styles['pict_phone']}`}></div>
+          <p className={styles.text}>+7 (111) 222-33-44</p>
+        </div>
+        <div className={styles['contact-container']}>
+          <div className={`${styles.pict} ${styles['pict_email']}`}></div>
+          <p className={styles.text}>info@plypie.ru</p>
+        </div>
       </div>
-      <div className={contactsStyles['contact-container']}>
-        <div className={`${contactsStyles.pict} ${contactsStyles['pict_email']}`}></div>
-        <p className={contactsStyles.text}>info@plypie.ru</p>
-      </div>
-      <div className={contactsStyles['circle-container']}>
-        <div className={contactsStyles.circle}></div>
+      <div className={styles['circle-container']}>
+        <div className={styles.circle}></div>
       </div>
     </section>
   );

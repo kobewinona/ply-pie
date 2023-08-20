@@ -1,16 +1,24 @@
-.contacts {
+.layout {
   background-color: #4d4236;
   
   margin-top: 70px;
 }
 
-.contact-container {
+.contacts-container {
   width: calc(100% - (20px * 2));
   
   display: flex;
+  flex-direction: column;
+  column-gap: 80px;
+  
+  margin: 0 auto 40px;
+}
+
+.contact-container {
+  display: flex;
   column-gap: 20px;
   
-  margin: 0 auto 30px;
+  margin-top: 30px;
 }
 
 .pict {
@@ -47,7 +55,7 @@
   
   position: relative;
   
-  margin: 40px auto 0;
+  margin: 0 auto;
 }
 
 .circle {
@@ -68,7 +76,27 @@
 }
 
 @media (min-width: 768px) {
-  .contacts {
+  .layout {
     margin-top: 185px;
+  }
+  
+  .contacts-container {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    
+    margin-left: 25%;
+  }
+  
+  .contact-container {
+    display: flex;
+    column-gap: 20px;
+    
+    margin-bottom: 0;
+  }
+  
+  .circle-container {
+    width: 200px;
+    margin: 0 auto 0 25%;
   }
 }

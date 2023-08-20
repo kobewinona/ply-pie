@@ -35,3 +35,10 @@
   margin: 0 auto;
   border: 2px solid #4d4236;
 }
+
+@media (min-width: 410px) {
+  .button_place_order {
+    width: auto;
+  }
+  
+}

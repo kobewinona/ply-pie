@@ -2,6 +2,12 @@
   margin-top: 70px;
 }
 
+.form-container {
+  width: 100%;
+  
+  background-color: #eee7d7;
+}
+
 .text-area {
   width: calc(100% - (41px * 2));
   aspect-ratio: 56 / 25;
@@ -24,6 +30,18 @@
 
 @media (min-width: 768px) {
   .layout {
+    background-image: url('~public/cover/table.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
     margin-top: 185px;
+  }
+  
+  .form-container {
+    width: 45%;
+    max-width: 510px;
+    min-width: 410px;
+    
+    margin-left: 60px;
   }
 }
