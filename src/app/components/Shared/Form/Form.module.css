@@ -1,0 +1,11 @@
+.layout {
+  width: calc(100% - (20px * 2));
+  
+  margin: 0 auto;
+}
+
+@media (min-width: 480px) {
+  .layout {
+    width: calc(100% - (40px * 2));
+  }
+}

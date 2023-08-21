@@ -26,7 +26,7 @@
 }
 
 .button_place_order {
-  width: calc(100% - (20px * 2));
+  width: 100%;
   
   color: #eee7d7;
   

@@ -28,7 +28,7 @@ const Input = forwardRef(({onUpdate, validate, place, fieldSize, ...props}, ref)
     <>
       <input
         ref={ref}
-        className={`${styles.input} ${!isInputValid && styles['input_invalid']} ${styles[`input_size_${fieldSize}`]}`}
+        className={`${styles['layout']} ${!isInputValid && styles['input_invalid']} ${styles[`input_size_${fieldSize}`]}`}
         onChange={handleInputsChange}
         value={inputValue || ''}
         {...props}

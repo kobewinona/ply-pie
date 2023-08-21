@@ -16,6 +16,9 @@
 }
 
 .title_place_about {
+  width: calc(100% - 40px - 20px);
+  max-width: 380px;
+  
   margin: 30px auto 20px 40px;
 }
 
@@ -29,33 +32,44 @@
 
 .title_place_order {
   text-align: center;
+  
+  margin: 0 auto 20px;
 }
 
 @media (min-width: 480px) {
-  .title {
-    width: calc(100% - (40px * 2));
+  .title_place_about {
+    width: calc(100% - 80px - 40px);
     max-width: 768px;
+  
+    margin-left: 80px;
   }
 }
 
 @media (min-width: 768px) {
+  .title {
+    width: calc(100% - (40px * 2));
+    max-width: none;
+  }
+  
   .title_place_item {
     margin-top: 25px;
     margin-bottom: 0;
   }
-}
-
-@media (min-width: 768px) {
+  
   .title_place_about {
-    margin-top: 0;
+    margin-left: 40px;
   }
-}
-
-@media (min-width: 768px) {
+  
+  .title_place_order {
+    text-align: left;
+    
+    margin: 0 auto 30px;
+  }
+  
   .title_place_contacts {
     text-align: left;
     
-    margin: 0 0 0 25%;
+    margin: 0 0 0 clamp(17%, 23vw, 25%);
     padding-top: 60px;
     padding-bottom: 0;
   }

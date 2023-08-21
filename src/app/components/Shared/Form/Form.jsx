@@ -2,6 +2,8 @@
 
 import {useRef, useState, useEffect} from 'react';
 
+import styles from './Form.module.css';
+
 import Spinner from '../Spinner';
 import Button from '../Button';
 
@@ -62,6 +64,7 @@ const Form = ({onSubmit, isOpen, ...props}) => {
   
   return (
     <form
+      className={styles['layout']}
       onChange={handleChange}
       onSubmit={handleSubmit}
       name={props.name}

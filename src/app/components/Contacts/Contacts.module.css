@@ -30,10 +30,12 @@
 }
 
 .pict_phone {
+  /*noinspection CssUnknownTarget*/
   background-image: url('~public/pictograms/phone.png');
 }
 
 .pict_email {
+  /*noinspection CssUnknownTarget*/
   background-image: url('~public/pictograms/email.png');
 }
 
@@ -50,7 +52,7 @@
 
 .circle-container {
   width: 100%;
-  height: clamp(70px, 13vw, 90px);
+  height: 70px;
   overflow: hidden;
   
   position: relative;
@@ -59,7 +61,7 @@
 }
 
 .circle {
-  width: clamp(150px, 35vw, 200px);
+  width: 150px;
   aspect-ratio: 1 / 1;
   
   background-color: #eee7d7;
@@ -85,7 +87,7 @@
     display: flex;
     flex-direction: row;
     
-    margin-left: 25%;
+    margin-left: clamp(17%, 23vw, 25%);
   }
   
   .contact-container {
@@ -96,7 +98,8 @@
   }
   
   .circle-container {
-    width: 200px;
-    margin: 0 auto 0 25%;
+    width: 150px;
+    
+    margin: 0 auto 0 clamp(17%, 23vw, 25%);
   }
 }

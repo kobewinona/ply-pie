@@ -1,5 +1,5 @@
-.input {
-  width: calc(100% - (41px * 2));
+.layout {
+  width: calc(100% - 40px);
   
   background-color: transparent;
   
@@ -16,13 +16,11 @@
   border: 1px solid #ca7458;
 }
 
-.input:focus {
+.layout:focus {
   outline: none;
 }
 
 .input_error-message {
-  width: calc(100% - (20px * 2));
-  
   color: #ca7458;
   
   display: block;
