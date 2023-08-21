@@ -1,6 +1,6 @@
 import Header from './components/Header/Header';
 import Lead from './components/Lead/Lead';
-import ItemList from './components/ItemList/ItemList';
+import ItemList from './components/Items/ItemList';
 import Slogan from './components/Slogan/Slogan';
 import About from './components/About/About';
 import Order from './components/Order/Order';
