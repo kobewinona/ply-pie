@@ -8,7 +8,7 @@ import Button from '../Shared/Button';
 
 const About = () => {
   return (
-    <section id="about" className={styles['layout']}>
+    <article id="about" className={styles['layout']}>
       <div className={styles['line']}></div>
       <div className={styles['image']}>
         <Image
@@ -29,7 +29,7 @@ const About = () => {
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
         deserunt mollit anim id est laborum." place="about" gridOrder="3" />
       <Button text="Узнать еще" theme="light" place="about" gridOrder="4"/>
-    </section>
+    </article>
   );
 };
 

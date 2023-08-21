@@ -33,6 +33,9 @@
 
 .logo {
   width: clamp(80px, 13.5vw, 100px);
+  
+  cursor: pointer;
+  
   position: absolute;
   
   top: 40px;
