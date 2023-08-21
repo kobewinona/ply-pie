@@ -6,6 +6,7 @@ import {items} from '../../utils/items';
 
 import Title from '../Shared/Title';
 import Text from '../Shared/Text';
+import {console} from 'next/dist/compiled/@edge-runtime/primitives';
 
 
 const ItemInfo = ({itemId}) => {
@@ -29,7 +30,12 @@ const ItemInfo = ({itemId}) => {
               priority
             />
           </div>
-          <div className={styles['image-gallery']}>
+          <div
+            className={styles['image-gallery']}
+            style={galleryImages.length <= 2
+              ? {justifyContent: 'normal'}
+              : {justifyContent: 'space-between'}}
+          >
             {
               galleryImages.map(image => {
                 return (

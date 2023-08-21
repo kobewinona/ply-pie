@@ -3,7 +3,7 @@ import Order from '../components/Order/Order';
 import Responsive from '@/app/components/Shared/Responsive';
 import NavBar from '../components/NavBar/NavBar';
 import Slogan from '../components/Slogan/Slogan';
-import ItemInfo from '../components/ItemInfo/ItemInfo';
+import ItemInfo from '../components/ItemList/ItemInfo';
 import Footer from '../components/Footer/Footer';
 
 

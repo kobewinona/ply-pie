@@ -1,14 +1,10 @@
 import styles from './Text.module.css';
 
 
-const Text = ({text, place, gridOrder}) => {
-  const textGridOrder = {
-    order: gridOrder,
-  }
+const Text = ({text, place}) => {
   return (
     <p
       className={`${styles['layout']} ${styles[`layout_place_${place}`]}`}
-      style={textGridOrder}
     >{text}</p>
   );
 };

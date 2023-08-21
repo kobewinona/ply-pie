@@ -69,7 +69,6 @@ export const items = [
     gallery_images: [
       '/items/gallery-item/shelf/1.jpeg',
       '/items/gallery-item/shelf/2.jpeg',
-      '/items/gallery-item/shelf/3.jpeg',
     ],
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n' +
       '        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n' +
