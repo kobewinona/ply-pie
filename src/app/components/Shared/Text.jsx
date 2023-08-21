@@ -7,7 +7,7 @@ const Text = ({text, place, gridOrder}) => {
   }
   return (
     <p
-      className={`${styles['text']} ${styles[`text_place_${place}`]}`}
+      className={`${styles['layout']} ${styles[`layout_place_${place}`]}`}
       style={textGridOrder}
     >{text}</p>
   );

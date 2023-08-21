@@ -6,6 +6,7 @@
   position: relative;
   
   margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .line {
@@ -43,7 +44,7 @@
     
     grid-template-columns: fit-content(100%) 45% 55%;
     
-    margin: 185px auto 0;
+    margin: 185px auto;
   }
   
   .line {

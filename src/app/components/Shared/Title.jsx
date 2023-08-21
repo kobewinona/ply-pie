@@ -8,7 +8,7 @@ const Title = ({text, place, gridOrder}) => {
   
   return (
     <h2
-      className={`${styles['title']} ${styles[`title_place_${place}`]}`}
+      className={`${styles['layout']} ${styles[`layout_place_${place}`]}`}
       style={titleGridOrder}
     >{text}</h2>
   );

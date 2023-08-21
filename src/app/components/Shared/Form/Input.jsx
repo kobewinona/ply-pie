@@ -1,11 +1,11 @@
 'use client'
 
-import {forwardRef, useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 
 import styles from './Input.module.css';
 
 
-const Input = forwardRef(({onUpdate, validate, place, fieldSize, ...props}, ref) => {
+const Input = ({onUpdate, validate, place, fieldSize, ...props}) => {
   const [inputValue, setInputValue] = useState('');
   const [isInputValid, setIsInputValid] = useState(true);
   const [errorMessage, setErrorMessage] = useState('');
@@ -27,7 +27,6 @@ const Input = forwardRef(({onUpdate, validate, place, fieldSize, ...props}, ref)
   return (
     <>
       <input
-        ref={ref}
         className={`${styles['layout']} ${!isInputValid && styles['input_invalid']} ${styles[`input_size_${fieldSize}`]}`}
         onChange={handleInputsChange}
         value={inputValue || ''}
@@ -36,6 +35,6 @@ const Input = forwardRef(({onUpdate, validate, place, fieldSize, ...props}, ref)
       <span className={styles['input_error-message']}>{!isInputValid && errorMessage}</span>
     </>
   );
-});
+};
 
 export default Input;

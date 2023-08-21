@@ -20,7 +20,7 @@ const Page = () => {
       <main>
         <Lead />
         <ItemList />
-        <Slogan />
+        <Slogan place="main-page" />
         <About />
         <Order />
         <Contacts />

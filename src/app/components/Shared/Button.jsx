@@ -1,14 +1,14 @@
 import styles from './Button.module.css';
 
 
-const Button = ({text, place, gridOrder, ...props}) => {
+const Button = ({text, theme, place, gridOrder, ...props}) => {
   const buttonGridOrder = {
     order: gridOrder,
   };
   
   return (
     <button
-      className={`${styles['button']} ${styles[`button_place_${place}`]}`}
+      className={`${styles['layout']} ${styles[`layout_theme_${theme}`]} ${styles[`layout_place_${place}`]}`}
       style={buttonGridOrder}
       {...props}
     >{text}</button>

@@ -12,6 +12,7 @@ const Lead = () => {
             src={`/cover/secretaire.jpeg`}
             alt=""
             fill
+            sizes="100%"
             style={{objectFit: 'cover'}}
             priority
           />
@@ -21,6 +22,7 @@ const Lead = () => {
             src={`/cover/table.jpeg`}
             alt=""
             fill
+            sizes="100%"
             style={{objectFit: 'cover'}}
             priority
           />
@@ -30,6 +32,7 @@ const Lead = () => {
             src={`/cover/shelf.jpeg`}
             alt=""
             fill
+            sizes="100%"
             style={{objectFit: 'cover'}}
             priority
           />

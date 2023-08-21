@@ -37,7 +37,7 @@ const Form = ({onSubmit, isOpen, ...props}) => {
   const handleSubmit = event => {
     event.preventDefault();
     
-    if (validate && event.target.checkValidity()) {
+    if (event.target.checkValidity()) {
       onSubmit();
     } else {
       onSubmit();
@@ -56,12 +56,6 @@ const Form = ({onSubmit, isOpen, ...props}) => {
     setInputsValidity({});
   }, [isOpen]);
   
-  const submitButtonRef = useRef();
-  
-  if (isOpen) {
-    setTimeout(() => submitButtonRef.current?.focus(), 50);
-  }
-  
   return (
     <form
       className={styles['layout']}
@@ -74,9 +68,8 @@ const Form = ({onSubmit, isOpen, ...props}) => {
       {props.isUpdating
         ? <Spinner theme={props.theme} size={props.size}/>
         : <Button
-          ref={submitButtonRef}
-          isFormValid={isFormValid && true}
           text="Отправить"
+          theme="dark"
           place="order"
           type="submit"
           name="submit"

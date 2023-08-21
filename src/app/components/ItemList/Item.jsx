@@ -1,5 +1,5 @@
-import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import styles from './Item.module.css';
 import Title from '../Shared/Title';
@@ -16,12 +16,15 @@ const Item = ({id, name, imagePosition, description}) => {
           src={`/items/${id}.jpeg`}
           alt=""
           fill
+          sizes="100%"
           style={{objectFit: 'cover'}}
           priority
         />
       </div>
       <Text text={description} place="item" />
-      <Button text="Подробнее" place="item" />
+      <Link className={styles['link']} href={`/${id}`}>
+        <Button text="Подробнее" theme="light" place="item" />
+      </Link>
     </div>
   );
 };

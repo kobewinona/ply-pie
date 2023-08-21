@@ -15,6 +15,7 @@ const About = () => {
           src='/about/about.jpeg'
           alt=""
           fill
+          sizes="100%"
           style={{objectFit: 'cover'}}
           priority
         />
@@ -27,7 +28,7 @@ const About = () => {
         in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
         deserunt mollit anim id est laborum." place="about" gridOrder="3" />
-      <Button text="Узнать еще" place="about" gridOrder="4"/>
+      <Button text="Узнать еще" theme="light" place="about" gridOrder="4"/>
     </section>
   );
 };

@@ -34,7 +34,6 @@ const Order = () => {
           size="small"
         >
           <Input
-            defaultValue={''}
             onUpdate={handleValuesUpdate}
             name="userName"
             type="text"
@@ -46,7 +45,6 @@ const Order = () => {
             required
           />
           <Input
-            defaultValue={''}
             onUpdate={handleValuesUpdate}
             name="userName"
             type="email"
