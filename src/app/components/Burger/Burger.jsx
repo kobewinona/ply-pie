@@ -2,9 +2,9 @@
 
 import {useState} from 'react';
 
-import burgerStyles from './Burger.module.css';
+import styles from './Burger.module.css';
 
-const Burger = () => {
+const Burger = ({isVisible}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   const toggleMenu = () => {
@@ -12,8 +12,8 @@ const Burger = () => {
   }
   
   return (
-    <div className={burgerStyles.container} onClick={toggleMenu}>
-      <div className={`${burgerStyles.icon} ${isMenuOpen && burgerStyles.iconTurnedIntoCross}`}></div>
+    <div className={`${styles['layout']} ${isVisible && styles['layout_visible']}`} onClick={toggleMenu}>
+      <div className={`${styles['icon']} ${isMenuOpen && styles['iconTurnedIntoCross']}`}></div>
     </div>
   );
 };

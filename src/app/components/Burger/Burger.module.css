@@ -16,15 +16,26 @@
   }
 }
 
-.container {
+.layout {
   width: 22px;
   height: 21px;
+  overflow: hidden;
   
   cursor: pointer;
   
-  overflow: hidden;
+  visibility: hidden;
+  
+  opacity: 0;
   
   transition: opacity .4s ease-out;
+}
+
+.layout_visible {
+  visibility: visible;
+  
+  opacity: 1;
+  
+  transition: opacity .2s ease-in-out;
 }
 
 .icon {

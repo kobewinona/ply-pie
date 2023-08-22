@@ -1,3 +1,30 @@
+@keyframes appear1 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 15px;
+  }
+}
+
+@keyframes appear2 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 12px;
+  }
+}
+
+@keyframes appear3 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 9px;
+  }
+}
+
 .nav-bar {
   background-color: #eee7d7;
   
@@ -16,6 +43,9 @@
   
   list-style: none;
   
+  visibility: visible;
+  opacity: 1;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -23,6 +53,83 @@
   
   margin: 0 auto;
   padding: 0;
+  
+  transition: opacity 0s .2s linear;
+}
+
+.menu-container_hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu {
+  max-width: 458px;
+  
+  list-style: none;
+  
+  display: flex;
+  justify-content: space-between;
+  column-gap: clamp(60px, 7vw, 80px);
+  
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.active-menu-item-pict {
+  width: 2px;
+  height: 15px;
+  
+  background-color: #4d4236;
+  
+  display: none;
+  
+  position: absolute;
+  
+  bottom: 5px;
+  left: -9px;
+  border-radius: 1px;
+  
+  animation: appear1 .2s 0s linear;
+}
+
+.active-menu-item-pict::before {
+  content: '';
+  width: 2px;
+  height: 12px;
+  
+  background-color: #4d4236;
+  
+  position: absolute;
+  
+  bottom: 0;
+  left: -5px;
+  border-radius: 1px;
+  
+  animation: appear2 .2s 0s linear;
+}
+
+.active-menu-item-pict::after {
+  content: '';
+  width: 2px;
+  height: 9px;
+  
+  background-color: #4d4236;
+  
+  position: absolute;
+  
+  bottom: 0;
+  left: -10px;
+  border-radius: 1px;
+  
+  animation: appear3 .2s 0s linear;
+}
+
+.active-menu-item-pict_active {
+  display: block;
 }
 
 .link {
@@ -32,12 +139,34 @@
   font-weight: 500;
   line-height: normal;
   text-decoration: none;
+  
+  cursor: pointer;
+}
+
+.link_active {
+  font-weight: 700;
 }
 
 .logo-container {
   font-size: 0;
   
+  cursor: pointer;
+  
+  visibility: hidden;
+  
   margin: 0;
+  
+  opacity: 0;
+  
+  transition: opacity .2s ease-in-out;
+}
+
+.logo-container_visible {
+  visibility: visible;
+  
+  opacity: 1;
+  
+  transition: opacity .2s ease-in-out;
 }
 
 .logo {
@@ -58,19 +187,6 @@
   border: none;
   border-radius: 20px;
   padding: 7px 48px;
-}
-
-.menu {
-  max-width: 458px;
-  
-  list-style: none;
-  
-  display: flex;
-  justify-content: space-between;
-  column-gap: clamp(60px, 7vw, 80px);
-  
-  margin: 0;
-  padding: 0;
 }
 
 .socials-container {

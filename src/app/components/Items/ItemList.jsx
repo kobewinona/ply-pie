@@ -9,7 +9,7 @@ import Responsive from '@/app/components/Shared/Responsive';
 
 const ItemList = () => {
   return (
-    <section className={styles['layout']}>
+    <section id="item-list" className={styles['layout']}>
       <ul className={styles['item-list-container']}>
         {
           items.map((item, i) => {
