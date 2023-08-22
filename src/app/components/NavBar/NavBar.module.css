@@ -69,10 +69,17 @@
   
   display: flex;
   justify-content: space-between;
-  column-gap: clamp(60px, 7vw, 80px);
+  column-gap: clamp(50px, 6.5vw, 80px);
+  align-items: center;
   
+  position: absolute;
+  
+  top: 10px;
+  left: 50%;
   margin: 0;
   padding: 0;
+  
+  transform: translate(-50%, 0);
 }
 
 .menu-item {
