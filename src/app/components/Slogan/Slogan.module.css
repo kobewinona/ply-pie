@@ -1,5 +1,8 @@
 .layout {
   width: calc(100% - (20px * 2));
+  
+  cursor: default;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
